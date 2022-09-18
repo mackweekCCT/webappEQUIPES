@@ -157,10 +157,10 @@ elif choice == "Dúvidas e Respostas":
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
     colDR1, colDR2 = st.columns((1,1))
     with colDR1:
-        st.write("Nº de Dúvidas:")
+        st.write("Nº TOTAL de Dúvidas (Todas as Equipes):")
         st.warning(NregD)
     with colDR2:
-        st.write("Nº de dúvidas RESPONDIDAS:")
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS (Todas as Equipes):")
         st.info(NregR)
     #EQUIPE 01
     st.write('EQUIPE 01:')
