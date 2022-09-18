@@ -78,7 +78,7 @@ st.title("DASHBOARD - EQUIPES")
 #st.subheader("Sub Cabeçalho")
 # Use st.write("") para adicionar um texto ao seu Web app
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
-#st.subheader("------ **Desenvolvido por: Massaki de O. Igarashi** -----")
+#st.sudebar.subheader("**Desenvolvido por: Massaki de O. Igarashi** -----")
 
 menu = ["Dúvidas",
         "Respostas",
