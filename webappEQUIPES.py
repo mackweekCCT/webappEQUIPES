@@ -272,7 +272,7 @@ elif choice == "EQUIPE 01":
         st.warning(NregDf01D)
     with colEQ12:
         st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
-        st.info(NregRf01R)
+        st.info(NregDf01R)
     st.info('Dúvida(s) Enviada(s)')
     st.code(df01D['duvida']) 
     st.warning('Resposta do(a) TUTOR(A):')
