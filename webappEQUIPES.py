@@ -293,6 +293,20 @@ elif choice == "EQUIPE 02":
     st.warning('Resposta do(a) TUTOR(A):')
     st.code(df02R['resposta'])    
         
+elif choice == "EQUIPE 03":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 03:')
+    colEQ31, colEQ32 = st.columns((1,1))
+    with colEQ31:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf03D)
+    with colEQ32:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf03R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df03D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df03R['resposta'])        
 elif choice == "Texto_Markdown":
     st.subheader("Texto Markdown")
     st.write("Veja a seguir opção de formatação de texto Markdown")
