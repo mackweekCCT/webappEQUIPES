@@ -256,4 +256,4 @@ elif choice == "Texto_Markdown":
     )
 
 #st.image(image01, width=800, caption='Rótulo da Imagem 01') 
-st.subheader("**Desenvolvido pelo Professor Massaki de O. Igarashi** ")
+#st.subheader("**Desenvolvido pelo Professor Massaki de O. Igarashi** ")
