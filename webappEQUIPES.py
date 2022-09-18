@@ -74,11 +74,6 @@ st.title("DASHBOARD - EQUIPES")
 # st.header("Cabeçalho")
 #st.subheader("Sub Cabeçalho")
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
-col1, col2 = st.columns((1,1))
-with col1:
-    st.info(NregD)
-with col2:
-    st.info(NregR)
 menu = ["Dúvidas",
         "Respostas",
         "Dúvidas e Respostas",
@@ -229,7 +224,13 @@ elif choice == "Dúvidas e Respostas":
 
 elif choice == "EQUIPE 01":       
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
-    #EQUIPE 01
+    col1, col2 = st.columns((1,1))
+    with col1:
+        st.write("Nº de Dúvidas:")
+        st.info(NregD)
+    with col2:
+         st.write("Nº de dúvidas RESPONDIDAS:")
+        st.info(NregR)
     st.write('EQUIPE 01:')
     st.info('Dúvida(s) Enviada(s)')
     st.code(df01D['duvida']) 
