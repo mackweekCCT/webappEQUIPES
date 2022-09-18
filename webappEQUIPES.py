@@ -236,6 +236,13 @@ elif choice == "Dúvidas e Respostas":
 elif choice == "EQUIPE 01":       
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
     st.write('EQUIPE 01:')
+    colEQ11, colEQ12 = st.columns((1,1))
+    with colEQ11:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf01D)
+    with colEQ12:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregRf01R)
     st.info('Dúvida(s) Enviada(s)')
     st.code(df01D['duvida']) 
     st.warning('Resposta do(a) TUTOR(A):')
