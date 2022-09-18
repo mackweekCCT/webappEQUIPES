@@ -226,8 +226,8 @@ elif choice == "EQUIPE 01":
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
     col1, col2 = st.columns((1,1))
     with col1:
-        st.warning("Nº de Dúvidas:")
-        st.info(NregD)
+        st.write("Nº de Dúvidas:")
+        st.warning(NregD)
     with col2:
         st.write("Nº de dúvidas RESPONDIDAS:")
         st.info(NregR)
