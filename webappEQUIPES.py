@@ -91,6 +91,7 @@ NregDf10D = len(df10D)
 NregDf10R = len(df10R)
 NregDf11D = len(df11D)
 NregDf11R = len(df11R)
+
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
 st.title("DASHBOARD - EQUIPES")
@@ -275,24 +276,7 @@ elif choice == "EQUIPE 01":
     st.info('Dúvida(s) Enviada(s)')
     st.code(df01D['duvida']) 
     st.warning('Resposta do(a) TUTOR(A):')
-    st.code(df01R['resposta']) 
-
- elif choice == "EQUIPE 02":       
-    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
-    st.subheader('EQUIPE 02:')
-    #NregDf02D = len(df02D)
-    #NregDf02R = len(df02R)
-    colEQ21, colEQ22 = st.columns((1,1))
-    with colEQ21:
-        st.write("Nº TOTAL de Dúvidas:")
-        st.warning(NregDf02D)
-    with colEQ22:
-        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
-        st.info(NregDf02R)
-    st.info('Dúvida(s) Enviada(s)')
-    st.code(df02D['duvida']) 
-    st.warning('Resposta do(a) TUTOR(A):')
-    st.code(df02R['resposta'])          
+    st.code(df01R['resposta'])     
         
 elif choice == "Texto_Markdown":
     st.subheader("Texto Markdown")
