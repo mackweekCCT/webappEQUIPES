@@ -70,16 +70,25 @@ df11R = dfR[selecao11R]
 
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
-# Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("DASHBOARD - EQUIPES")
-# Use st.header("") para adicionar um CABEÇALHO ao seu Web app
 # st.header("Cabeçalho")
-# Use st.subheader("") para adicionar um SUB CABEÇALHO ao seu Web app
 #st.subheader("Sub Cabeçalho")
-# Use st.write("") para adicionar um texto ao seu Web app
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
-#st.subheader("**Desenvolvido por: Massaki de O. Igarashi** -----")
-
+col1, col2 = st.columns((1,1))
+with col1:
+    st.info(
+       """
+    ### ***Atenção!***
+    TEXTO DE ALERTA!
+    """    
+    )
+with col2:
+    st.info(
+    """
+    ### ***BEM VINDOS(AS)***
+   TEXTO BOAS VINDAS!
+    """
+    )
 menu = ["Dúvidas",
         "Respostas",
         "Dúvidas e Respostas",
