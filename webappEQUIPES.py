@@ -78,15 +78,15 @@ col1, col2 = st.columns((1,1))
 with col1:
     st.info(
        """
-    ### ***Atenção!***
-    TEXTO DE ALERTA!
+    ### ***Nº DÚVIDAS***
+    NregD
     """    
     )
 with col2:
     st.info(
     """
-    ### ***BEM VINDOS(AS)***
-   TEXTO BOAS VINDAS!
+    ### ***Nº RESPOSTAS***
+   NregR
     """
     )
 menu = ["Dúvidas",
