@@ -235,7 +235,7 @@ elif choice == "Dúvidas e Respostas":
 
 elif choice == "EQUIPE 01":       
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
-    st.write('EQUIPE 01:')
+    st.subheader('EQUIPE 01:')
     colEQ11, colEQ12 = st.columns((1,1))
     with colEQ11:
         st.write("Nº TOTAL de Dúvidas:")
