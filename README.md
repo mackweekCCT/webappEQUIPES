@@ -1,3 +1,3 @@
-# 
-## Prof. Massaki de O. Igarashi (prof.massaki@gmail.com ou massaki.igarashi@mackenzie.br)
+# Aproveitem bem o Evento!
 ![IMAGEM1](https://github.com/lpgroup/webappEQUIPES/blob/main/ArteFINALHackathonVF.jpg)
+## e-mail: prof.massaki@gmail.com ou massaki.igarashi@mackenzie.br
