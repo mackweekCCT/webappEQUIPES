@@ -68,7 +68,7 @@ df10R = dfR[selecao10R]
 selecao11R = dfR['equipe']=='Equipe 11'
 df11R = dfR[selecao11R]
 
-image01 = Image.open('ArteFINALHackathonVF.jpg')
+image01 = Image.open('MackWeek_Storie.jpg')
 st.sidebar.image(image01, width=800, caption='Hackathon Mack Week CCT 2022') 
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("DASHBOARD - EQUIPES")
