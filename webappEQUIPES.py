@@ -82,7 +82,8 @@ st.title("DASHBOARD - EQUIPES")
 
 menu = ["Dúvidas",
         "Respostas",
-        "Dúvidas e Respostas"]
+        "Dúvidas e Respostas",
+        "EQUIPE 01"]
 choice = st.sidebar.selectbox("Menu de Opções",menu)
 st.sidebar.write("Texto Side Bar")
 
@@ -227,6 +228,15 @@ elif choice == "Dúvidas e Respostas":
     st.warning('Resposta do(a) TUTOR(A):')
     st.code(df11R['resposta']) 
 
+elif choice == "EQUIPE 01":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    #EQUIPE 01
+    st.write('EQUIPE 01:')
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df01D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df01R['resposta']) 
+
 elif choice == "Texto_Markdown":
     st.subheader("Texto Markdown")
     st.write("Veja a seguir opção de formatação de texto Markdown")
@@ -244,6 +254,6 @@ elif choice == "Texto_Markdown":
     Dia 2 de 2 | ?h | ? a ?
     """
     )
-elif choice == "Inserir_Figura":
-    st.image(image01, width=800, caption='Rótulo da Imagem 01') 
+
+st.image(image01, width=800, caption='Rótulo da Imagem 01') 
 st.subheader("**Desenvolvido pelo Professor Massaki de O. Igarashi** ")
