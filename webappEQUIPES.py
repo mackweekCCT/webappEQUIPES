@@ -76,19 +76,9 @@ st.title("DASHBOARD - EQUIPES")
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
 col1, col2 = st.columns((1,1))
 with col1:
-    st.info(
-       """
-    ### ***Nº DÚVIDAS***
-    NregD
-    """    
-    )
+    st.info(NregD)
 with col2:
-    st.info(
-    """
-    ### ***Nº RESPOSTAS***
-   NregR
-    """
-    )
+    st.info(NregR)
 menu = ["Dúvidas",
         "Respostas",
         "Dúvidas e Respostas",
