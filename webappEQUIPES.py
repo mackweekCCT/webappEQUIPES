@@ -69,7 +69,7 @@ selecao11R = dfR['equipe']=='Equipe 11'
 df11R = dfR[selecao11R]
 
 image01 = Image.open('ArteFINALHackathonVF.jpg')
-st.image(image01, width=800, caption='Hackathon Mack Week CCT 2022') 
+st.sidebar.image(image01, width=800, caption='Hackathon Mack Week CCT 2022') 
 # Use st.title("") para adicionar um TÍTULO ao seu Web app
 st.title("DASHBOARD - EQUIPES")
 # Use st.header("") para adicionar um CABEÇALHO ao seu Web app
@@ -255,5 +255,5 @@ elif choice == "Texto_Markdown":
     """
     )
 
-st.image(image01, width=800, caption='Rótulo da Imagem 01') 
+#st.image(image01, width=800, caption='Rótulo da Imagem 01') 
 st.subheader("**Desenvolvido pelo Professor Massaki de O. Igarashi** ")
