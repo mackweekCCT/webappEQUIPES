@@ -14,7 +14,7 @@ from urllib.error import URLError
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRtt6VlUfp77JA2ok1dUAN5WMj3NNKCliMyG6Tb7Yu8MzUzQ5lZXjcNOWMgit6VaJw8W8lPIzjjnWVn/pub?gid=51090662&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
-nREGISTROS = len(dfD)
+NregD = len(dfD)
 dfD.columns = ['email', 'equipe', 'nome', 'duvida', 'obs']
 selecao01D = dfD['equipe']=='Equipe 01'
 df01D = dfD[selecao01D]
@@ -43,7 +43,7 @@ df11D = dfD[selecao11D]
 rR = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQw6XD9vI_C4zvZ6W51vut_Ze_D_OSESuXiHh1IAXeBFXRRvyQ7kyFTLbGip1obadjbZHUmaAxvXmnz/pub?gid=1789345467&single=true&output=csv')
 dataR = rR.content
 dfR = pd.read_csv(BytesIO(dataR), index_col=0)
-nREGISTROS = len(dfR)
+NregR = len(dfR)
 dfR.columns = ['email', 'equipe', 'nome', 'resposta', 'sugestao']
 selecao01R = dfR['equipe']=='Equipe 01'
 df01R = dfR[selecao01R]
