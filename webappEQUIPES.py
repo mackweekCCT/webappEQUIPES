@@ -229,7 +229,7 @@ elif choice == "EQUIPE 01":
         st.write("Nº de Dúvidas:")
         st.info(NregD)
     with col2:
-         st.write("Nº de dúvidas RESPONDIDAS:")
+        st.write("Nº de dúvidas RESPONDIDAS:")
         st.info(NregR)
     st.write('EQUIPE 01:')
     st.info('Dúvida(s) Enviada(s)')
