@@ -91,7 +91,7 @@ NregDf11R = len(df11R)
 
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
-st.title("DASHBOARD - EQUIPES HACKATHON")
+st.title("PAINEL - EQUIPES HACKATHON")
 # st.header("Cabeçalho")
 #st.subheader("Sub Cabeçalho")
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
