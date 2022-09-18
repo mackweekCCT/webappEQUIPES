@@ -321,7 +321,7 @@ elif choice == "EQUIPE 04":
     st.info('Dúvida(s) Enviada(s)')
     st.code(df04D['duvida']) 
     st.warning('Resposta do(a) TUTOR(A):')
-    st.code(df03R['resposta'])  
+    st.code(df04R['resposta'])  
         
 elif choice == "EQUIPE 05":       
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
