@@ -338,5 +338,94 @@ elif choice == "EQUIPE 05":
     st.warning('Resposta do(a) TUTOR(A):')
     st.code(df05R['resposta'])        
 
+elif choice == "EQUIPE 06":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 06:')
+    colEQ61, colEQ62 = st.columns((1,1))
+    with colEQ61:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf06D)
+    with colEQ62:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf06R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df06D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df06R['resposta'])   
+        
+elif choice == "EQUIPE 07":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 07:')
+    colEQ71, colEQ72 = st.columns((1,1))
+    with colEQ71:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf07D)
+    with colEQ72:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf07R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df07D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df07R['resposta'])    
+        
+elif choice == "EQUIPE 08":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 08:')
+    colEQ81, colEQ82 = st.columns((1,1))
+    with colEQ81:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf08D)
+    with colEQ82:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf08R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df08D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df08R['resposta'])  
+        
+elif choice == "EQUIPE 09":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 09:')
+    colEQ91, colEQ92 = st.columns((1,1))
+    with colEQ91:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf09D)
+    with colEQ92:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf09R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df09D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df09R['resposta'])  
+        
+elif choice == "EQUIPE 10":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 10:')
+    colEQ101, colEQ102 = st.columns((1,1))
+    with colEQ101:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf10D)
+    with colEQ102:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf10R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df10D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df10R['resposta']) 
+        
+elif choice == "EQUIPE 11":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 11:')
+    colEQ111, colEQ112 = st.columns((1,1))
+    with colEQ111:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf11D)
+    with colEQ112:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf11R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df11D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df11R['resposta'])   
 #st.image(image01, width=800, caption='Rótulo da Imagem 01') 
 #st.subheader("**Desenvolvido pelo Professor Massaki de O. Igarashi** ")
