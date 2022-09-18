@@ -85,7 +85,7 @@ menu = ["Dúvidas",
         "Dúvidas e Respostas",
         "EQUIPE 01"]
 choice = st.sidebar.selectbox("Menu de Opções",menu)
-st.sidebar.write("Texto Side Bar")
+st.sidebar.info("By Massaki Igarashi")
 
 if choice == "Dúvidas": 
     st.header("Painel Analítico: DÚVIDAS")   
