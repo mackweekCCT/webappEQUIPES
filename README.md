@@ -1,3 +1,3 @@
 # 
-## Prof. Massaki de Oliveira Igarashi (prof.massaki@gmail.com)
-![IMAGEM1](https://github.com/massakiigarashi2/PythonComRPA/blob/main/evento2_12set22.jpg)
+## Prof. Massaki de O. Igarashi (prof.massaki@gmail.com ou massaki.igarashi@mackenzie.br)
+![IMAGEM1](https://github.com/lpgroup/webappEQUIPES/blob/main/ArteFINALHackathonVF.jpg)
