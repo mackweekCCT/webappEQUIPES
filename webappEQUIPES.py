@@ -306,24 +306,37 @@ elif choice == "EQUIPE 03":
     st.info('Dúvida(s) Enviada(s)')
     st.code(df03D['duvida']) 
     st.warning('Resposta do(a) TUTOR(A):')
-    st.code(df03R['resposta'])        
-elif choice == "Texto_Markdown":
-    st.subheader("Texto Markdown")
-    st.write("Veja a seguir opção de formatação de texto Markdown")
-    st.markdown(
-    """
-    ## *Alguns sites referências*:    
-    - [Streamlit: hello world](https://calmcode.io/streamlit/hello-world.html)
-    - [:star: Streamlit emoji shortcodes](https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlitapp.com/)
-    - [Layouts and Containers](https://docs.streamlit.io/library/api-reference/layout)
-   
-    ##### CRONOGRAMA
-    DIA | CH HORÁRIA | CONTEÚDO
-    :---------: | :------: | :-------:
-    Dia 1 de 2 | ?h | ? a ?
-    Dia 2 de 2 | ?h | ? a ?
-    """
-    )
+    st.code(df03R['resposta'])  
+        
+elif choice == "EQUIPE 04":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 04:')
+    colEQ41, colEQ42 = st.columns((1,1))
+    with colEQ41:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf04D)
+    with colEQ42:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf04R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df04D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df03R['resposta'])  
+        
+elif choice == "EQUIPE 05":       
+    st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
+    st.subheader('EQUIPE 05:')
+    colEQ51, colEQ52 = st.columns((1,1))
+    with colEQ51:
+        st.write("Nº TOTAL de Dúvidas:")
+        st.warning(NregDf05D)
+    with colEQ52:
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
+        st.info(NregDf05R)
+    st.info('Dúvida(s) Enviada(s)')
+    st.code(df05D['duvida']) 
+    st.warning('Resposta do(a) TUTOR(A):')
+    st.code(df05R['resposta'])        
 
 #st.image(image01, width=800, caption='Rótulo da Imagem 01') 
 #st.subheader("**Desenvolvido pelo Professor Massaki de O. Igarashi** ")
