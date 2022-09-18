@@ -280,6 +280,8 @@ elif choice == "EQUIPE 01":
  elif choice == "EQUIPE 02":       
     st.header("Painel Analítico: DÚVIDAS E RESPOSTAS")  
     st.subheader('EQUIPE 02:')
+    #NregDf02D = len(df02D)
+    #NregDf02R = len(df02R)
     colEQ21, colEQ22 = st.columns((1,1))
     with colEQ21:
         st.write("Nº TOTAL de Dúvidas:")
