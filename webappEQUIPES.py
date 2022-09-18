@@ -68,6 +68,10 @@ df10R = dfR[selecao10R]
 selecao11R = dfR['equipe']=='Equipe 11'
 df11R = dfR[selecao11R]
 
+#Cálculo do Número de Registros por EQUIPE
+NregDf01D = len(df01D)
+NregRf01R = len(df01R)
+
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
 st.title("DASHBOARD - EQUIPES")
@@ -160,7 +164,7 @@ elif choice == "Dúvidas e Respostas":
         st.write("Nº TOTAL de Dúvidas (Todas as Equipes):")
         st.warning(NregD)
     with colDR2:
-        st.write("Nº TOTAL de dúvidas RESPONDIDAS (Todas as Equipes):")
+        st.write("Nº TOTAL de dúvidas RESPONDIDAS:")
         st.info(NregR)
     #EQUIPE 01
     st.write('EQUIPE 01:')
