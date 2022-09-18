@@ -1,11 +1,9 @@
-# myFirstStreamlitApp.py
-#import the libraries
+#libraries
 import streamlit as st
 from PIL import Image
 from io import BytesIO
 import requests
 import pandas as pd
-
 import altair as alt
 from urllib.error import URLError
 
@@ -93,7 +91,7 @@ NregDf11R = len(df11R)
 
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
-st.title("DASHBOARD - EQUIPES")
+st.title("DASHBOARD - EQUIPES hackathon mACK wEEK 2022")
 # st.header("Cabeçalho")
 #st.subheader("Sub Cabeçalho")
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
@@ -426,4 +424,4 @@ elif choice == "EQUIPE 11":
     st.code(df11D['duvida']) 
     st.warning('Resposta do(a) TUTOR(A):')
     st.code(df11R['resposta'])   
-          
+        
