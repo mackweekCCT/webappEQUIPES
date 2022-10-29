@@ -41,6 +41,28 @@ df10D = dfD[selecao10D]
 selecao11D = dfD['equipe']=='Equipe 11'
 df11D = dfD[selecao11D]
 
+# eliminar as colunas com valores ausentes
+summary = dfD.dropna(subset=['duvida'], axis=0)['duvida']
+# concatenar as palavras
+all_summary = " ".join(s for s in summary)
+# lista de stopword
+stopwords = set(STOPWORDS)
+stopwords.update(["de", "ao", "o", "nao", "para", "da", "meu", "em", "você", "ter", "um", "ou", "os", "ser", "só"])
+# gerar uma wordcloud
+wordcloud = WordCloud(stopwords=stopwords,
+                      background_color="white",
+                      width=1600, height=800).generate(all_summary)
+# mostrar a imagem final
+fig, ax = plt.subplots(figsize=(10,6))
+ax.imshow(wordcloud, interpolation='bilinear')
+ax.set_axis_off()
+plt.imshow(wordcloud);
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis("off")
+plt.show()
+st.pyplot()
+wordcloud.to_file("Nuvem_de_Palavras_DUVIDAS.png")
+
 #RESPOSTAS
 rR = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQw6XD9vI_C4zvZ6W51vut_Ze_D_OSESuXiHh1IAXeBFXRRvyQ7kyFTLbGip1obadjbZHUmaAxvXmnz/pub?gid=1789345467&single=true&output=csv')
 dataR = rR.content
