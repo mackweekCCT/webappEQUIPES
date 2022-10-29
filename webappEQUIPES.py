@@ -119,7 +119,11 @@ NregDf11R = len(df11R)
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
 st.title("PAINEL - EQUIPES HACKATHON")
-# st.header("Cabeçalho")
+
+st.header("Principais Dúvidas:")
+st.pyplot() #Este método faz exibirt a nuvem de palavras
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 #st.subheader("Sub Cabeçalho")
 #st.write("Como já deve ter percebido, o método st.write() é usado para escrita de texto e informações gerais!")
 menu = ["Dúvidas",
@@ -176,9 +180,7 @@ if choice == "Dúvidas":
     st.code(df11D['duvida']) 
     st.write("RESUMO DAS DÚVIDAS: ")
     st.code(dfD['equipe'] + ":" + dfD['duvida'])
-    st.pyplot()
-    st.set_option('deprecation.showPyplotGlobalUse', False)
-    
+        
 elif choice == "Respostas":       
     st.header("Painel Analítico: RESPOSTAS")    
     st.write('EQUIPE 01:')    
