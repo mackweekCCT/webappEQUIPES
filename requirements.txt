@@ -4,9 +4,9 @@ plotly
 altair 
 numpy
 io
-requests
-altair
-urllib
-import matplotlib
-PIL 
-wordcloud
+#requests
+#altair
+#urllib
+#import matplotlib
+#PIL 
+#wordcloud
