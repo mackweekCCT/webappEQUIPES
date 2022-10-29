@@ -60,7 +60,7 @@ plt.imshow(wordcloud);
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
-st.pyplot()
+#st.pyplot()
 wordcloud.to_file("Nuvem_de_Palavras_DUVIDAS.png")
 
 #RESPOSTAS
