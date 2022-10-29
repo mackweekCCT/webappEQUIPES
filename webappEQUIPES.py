@@ -153,7 +153,7 @@ if choice == "Dúvidas":
     st.warning('Dúvida(s) Enviada(s)')
     st.code(df11D['duvida']) 
     st.write("RESUMO DAS DÚVIDAS: ")
-    st.info(dfD['equipe'] + ":" + dfD['duvida'])
+    st.code(dfD['equipe'] + ":" + dfD['duvida'])
         
 elif choice == "Respostas":       
     st.header("Painel Analítico: RESPOSTAS")    
