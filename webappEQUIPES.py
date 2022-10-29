@@ -53,9 +53,9 @@ wordcloud = WordCloud(stopwords=stopwords,
                       background_color="white",
                       width=1600, height=800).generate(all_summary)
 # mostrar a imagem final
-fig, ax = plt.subplots(figsize=(10,6))
-ax.imshow(wordcloud, interpolation='bilinear')
-ax.set_axis_off()
+#fig, ax = plt.subplots(figsize=(10,6))
+#ax.imshow(wordcloud, interpolation='bilinear')
+#ax.set_axis_off()
 plt.imshow(wordcloud);
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis("off")
