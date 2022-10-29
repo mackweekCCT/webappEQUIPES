@@ -14,8 +14,10 @@ from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRtt6VlUfp77JA2ok1dUAN5WMj3NNKCliMyG6Tb7Yu8MzUzQ5lZXjcNOWMgit6VaJw8W8lPIzjjnWVn/pub?gid=51090662&single=true&output=csv')
 dataD = rD.content
 dfD = pd.read_csv(BytesIO(dataD), index_col=0)
+
 NregD = len(dfD)
 dfD.columns = ['email', 'equipe', 'nome', 'duvida', 'obs']
+
 selecao01D = dfD['equipe']=='Equipe 01'
 df01D = dfD[selecao01D]
 selecao02D = dfD['equipe']=='Equipe 02'
@@ -150,6 +152,8 @@ if choice == "Dúvidas":
     st.write('EQUIPE 11:')
     st.warning('Dúvida(s) Enviada(s)')
     st.code(df11D['duvida']) 
+    st.write("RESUMO DAS DÚVIDAS: ")
+    st.info(dfD['equipe'] + ":" + dfD['duvida'])
         
 elif choice == "Respostas":       
     st.header("Painel Analítico: RESPOSTAS")    
