@@ -5,7 +5,10 @@ from io import BytesIO
 import requests
 import pandas as pd
 import altair as alt
-from urllib.error import URLError
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+
+#from urllib.error import URLError
 
 #DÚVIDAS
 rD = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRtt6VlUfp77JA2ok1dUAN5WMj3NNKCliMyG6Tb7Yu8MzUzQ5lZXjcNOWMgit6VaJw8W8lPIzjjnWVn/pub?gid=51090662&single=true&output=csv')
