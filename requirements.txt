@@ -6,4 +6,5 @@ numpy
 matplotlib
 requests
 wordcloud
-#urllib
+cv2
+webbrowser
