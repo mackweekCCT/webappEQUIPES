@@ -3,10 +3,3 @@ pandas
 plotly
 altair 
 numpy
-io
-#requests
-#altair
-#urllib
-#import matplotlib
-#PIL 
-#wordcloud
