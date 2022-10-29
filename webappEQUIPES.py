@@ -176,7 +176,8 @@ if choice == "Dúvidas":
     st.code(df11D['duvida']) 
     st.write("RESUMO DAS DÚVIDAS: ")
     st.code(dfD['equipe'] + ":" + dfD['duvida'])
-    st.pyplot()
+    #st.pyplot()
+    st.pyplot(fig=None, clear_figure=None, **kwargs)
 elif choice == "Respostas":       
     st.header("Painel Analítico: RESPOSTAS")    
     st.write('EQUIPE 01:')    
