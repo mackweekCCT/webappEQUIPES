@@ -177,6 +177,8 @@ if choice == "Dúvidas":
     st.write("RESUMO DAS DÚVIDAS: ")
     st.code(dfD['equipe'] + ":" + dfD['duvida'])
     st.pyplot()
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    
 elif choice == "Respostas":       
     st.header("Painel Analítico: RESPOSTAS")    
     st.write('EQUIPE 01:')    
