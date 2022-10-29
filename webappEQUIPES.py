@@ -7,7 +7,8 @@ import pandas as pd
 import altair as alt
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-
+!pip install -q qrcode
+import qrcode
 #from urllib.error import URLError
 
 #DÚVIDAS
