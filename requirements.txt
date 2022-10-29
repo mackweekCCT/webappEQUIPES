@@ -5,5 +5,5 @@ altair
 numpy
 matplotlib
 requests
-wordcloud
-urllib
+#wordcloud
+#urllib
