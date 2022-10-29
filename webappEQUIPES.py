@@ -66,7 +66,7 @@ wordcloud.to_file("Nuvem_de_Palavras_DUVIDAS.png")
 qr = qrcode.QRCode()
 qr.add_data('123456')
 qr.make(fit=True)
-image02 = qr.make_image(fill_color="darkblue", back_color="white")
+st.image(qr.make_image(fill_color="darkblue", back_color="white"), width=300, caption='QRcode') 
 
 #RESPOSTAS
 rR = requests.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQw6XD9vI_C4zvZ6W51vut_Ze_D_OSESuXiHh1IAXeBFXRRvyQ7kyFTLbGip1obadjbZHUmaAxvXmnz/pub?gid=1789345467&single=true&output=csv')
@@ -123,7 +123,6 @@ NregDf11R = len(df11R)
 
 image01 = Image.open('ImagemLateral.jpg')
 st.sidebar.image(image01, width=300, caption='Mack Week CCT 2022') 
-st.image(image02, width=300, caption='QRcode') 
 st.title("PAINEL - EQUIPES HACKATHON")
 
 st.header("Principais Dúvidas:")
